@@ -169,6 +169,43 @@
       background: var(--gold-dark);
     }
 
+    .center-cta {
+      padding: 34px 0;
+      background:
+        linear-gradient(90deg, rgba(18, 63, 140, .08), rgba(245, 185, 66, .14), rgba(18, 63, 140, .08));
+      border-top: 1px solid rgba(18, 63, 140, .08);
+      border-bottom: 1px solid rgba(18, 63, 140, .08);
+    }
+
+    .center-cta-inner {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      justify-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+
+    .center-cta-inner h2 {
+      margin: 0;
+      font-size: clamp(25px, 3vw, 36px);
+      letter-spacing: 0;
+    }
+
+    .center-cta-inner p {
+      margin: 0;
+      max-width: 660px;
+      color: var(--muted);
+    }
+
+    .center-cta-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
     .hero {
       min-height: min(680px, calc(100vh - 148px));
       position: relative;
@@ -569,9 +606,18 @@
       display: grid;
       place-items: center;
       border-radius: 8px;
-      background: var(--blue-soft);
-      color: var(--blue);
-      border: 1px solid rgba(18, 63, 140, .12);
+      background:
+        radial-gradient(circle at 28% 24%, rgba(255, 255, 255, .8), transparent 34%),
+        linear-gradient(135deg, var(--gold), var(--blue));
+      color: #ffffff;
+      border: 1px solid rgba(245, 185, 66, .42);
+      box-shadow: 0 14px 28px rgba(16, 42, 92, .16);
+      transition: transform .22s ease;
+    }
+
+    .usp-card:hover .usp-icon,
+    .usp-card[open] .usp-icon {
+      transform: scale(1.08) rotate(-4deg);
     }
 
     .usp-icon svg {
@@ -604,8 +650,27 @@
     .usp-card p {
       color: var(--muted);
       margin: 0;
-      padding: 0 22px 22px;
+      padding: 0 22px 12px;
       font-size: 15px;
+    }
+
+    .usp-benefit {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0 22px 22px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .usp-benefit::before {
+      content: "★";
+      color: var(--gold-dark);
+      font-size: 13px;
     }
 
     .media-grid {
@@ -1183,6 +1248,17 @@
     </div>
   </section>
 
+  <aside class="center-cta">
+    <div class="center-cta-inner">
+      <h2>Want the right campus and class guidance?</h2>
+      <p>Parents can speak with Akshara admissions before visiting, compare nearby branches, and understand the right learning stage for their child.</p>
+      <div class="center-cta-actions">
+        <button class="button gold" type="button" data-open-form>Get Admission Guidance</button>
+        <a class="button primary" href="tel:+919023079999">Call Admissions</a>
+      </div>
+    </div>
+  </aside>
+
   <section class="band-aqua" id="features">
     <div class="section-inner">
       <div class="story-panel">
@@ -1202,6 +1278,7 @@
             <span><span class="usp-kicker">ASEP</span><span class="usp-title">Akshara Skill Enrichment Program</span></span>
           </summary>
           <p>Builds 21st-century scholastic skills through curated enrichment in logical thinking, presentation, problem solving, digital awareness, and competitive readiness. It helps students move from textbook confidence to real-world application.</p>
+          <span class="usp-benefit">Helps parents see skill growth beyond marks</span>
         </details>
         <details class="usp-card">
           <summary>
@@ -1209,6 +1286,7 @@
             <span><span class="usp-kicker">ASAT</span><span class="usp-title">Student Apex Tweet</span></span>
           </summary>
           <p>A focused language and aptitude initiative that develops expression, vocabulary, critical thinking, and confident articulation. It supports students who aspire for stronger communication, academic competitions, and global learning pathways.</p>
+          <span class="usp-benefit">Builds confidence for interviews and public speaking</span>
         </details>
         <details class="usp-card">
           <summary>
@@ -1216,6 +1294,7 @@
             <span><span class="usp-kicker">LSP</span><span class="usp-title">Learning Support Program</span></span>
           </summary>
           <p>Provides individual attention for learners who need reinforcement, bridge learning, or guided practice. Teachers track progress closely so children feel supported instead of left behind.</p>
+          <span class="usp-benefit">Gives parents reassurance through guided support</span>
         </details>
         <details class="usp-card">
           <summary>
@@ -1223,6 +1302,7 @@
             <span><span class="usp-kicker">SLC</span><span class="usp-title">Student Led Conferences</span></span>
           </summary>
           <p>Gives students the stage to explain their own progress, strengths, projects, and goals. Parents see not only marks, but also confidence, ownership, and reflection in action.</p>
+          <span class="usp-benefit">Lets parents hear progress from the child directly</span>
         </details>
         <details class="usp-card">
           <summary>
@@ -1230,6 +1310,7 @@
             <span><span class="usp-kicker">LDP</span><span class="usp-title">Language Development Program</span></span>
           </summary>
           <p>Improves listening, speaking, reading, comprehension, and written expression through consistent classroom practice. The goal is clear communication across subjects, not only language periods.</p>
+          <span class="usp-benefit">Improves day-to-day communication at school and home</span>
         </details>
         <details class="usp-card">
           <summary>
@@ -1237,10 +1318,22 @@
             <span><span class="usp-kicker">ETZ</span><span class="usp-title">Extra Time Zone</span></span>
           </summary>
           <p>Extends the school day into meaningful activities: sports, clubs, arts, wellness, supervised practice, and skill sessions. Students get time to discover interests and build habits beyond academics.</p>
+          <span class="usp-benefit">Supports holistic development after academics</span>
         </details>
       </div>
     </div>
   </section>
+
+  <aside class="center-cta">
+    <div class="center-cta-inner">
+      <h2>Every USP is designed for parent-visible progress.</h2>
+      <p>From language confidence to student-led presentations, Akshara’s programs help parents track how children are growing in academics, communication, discipline, and self-belief.</p>
+      <div class="center-cta-actions">
+        <button class="button gold" type="button" data-open-form>Ask About USPs</button>
+        <a class="button secondary" href="#infrastructure">View Infrastructure</a>
+      </div>
+    </div>
+  </aside>
 
   <section id="infrastructure">
     <div class="section-inner">
@@ -1318,6 +1411,17 @@
     </div>
   </section>
 
+  <aside class="center-cta">
+    <div class="center-cta-inner">
+      <h2>Plan a campus visit with the admissions team.</h2>
+      <p>See classrooms, sports spaces, activities, and safety systems before choosing a branch.</p>
+      <div class="center-cta-actions">
+        <button class="button gold" type="button" data-open-form>Book a Campus Visit</button>
+        <a class="button primary" href="#campuses">See Branches</a>
+      </div>
+    </div>
+  </aside>
+
   <section id="campuses">
     <div class="section-inner">
       <div class="section-heading">
@@ -1332,6 +1436,7 @@
         <article class="campus"><h3>A. S. Rao Nagar</h3><p>Serving families in the north-east zone.</p></article>
         <article class="campus"><h3>Kismatpur</h3><p>Campus access near the growing residential belt.</p></article>
         <article class="campus"><h3>Suchitra</h3><p>Campus choice for northern residential communities.</p></article>
+        <article class="campus"><h3>Karimnagar</h3><p>Akshara branch for families looking beyond the city corridor.</p></article>
       </div>
     </div>
   </section>
