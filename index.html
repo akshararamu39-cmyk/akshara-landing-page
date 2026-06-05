@@ -569,31 +569,12 @@
     .usp-card summary {
       min-height: 128px;
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr;
       align-items: start;
       gap: 12px;
       padding: 24px 22px 12px;
-      cursor: pointer;
+      cursor: default;
       list-style: none;
-    }
-
-    .usp-card summary::after {
-      content: "+";
-      width: 28px;
-      height: 28px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--gold);
-      color: #14233e;
-      font-weight: 900;
-      line-height: 1;
-      transition: transform .22s ease;
-    }
-
-    .usp-card[open] summary::after {
-      content: "-";
-      transform: rotate(180deg);
     }
 
     .usp-card summary::-webkit-details-marker {
@@ -1280,7 +1261,7 @@
           <p>Builds 21st-century scholastic skills through curated enrichment in logical thinking, presentation, problem solving, digital awareness, and competitive readiness. It helps students move from textbook confidence to real-world application.</p>
           <span class="usp-benefit">Helps parents see skill growth beyond marks</span>
         </details>
-        <details class="usp-card">
+        <details class="usp-card" open>
           <summary>
             <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M12 20v-6"/><path d="M8 20h8"/><path d="M7 8a5 5 0 0 1 10 0c0 4-5 7-5 7s-5-3-5-7Z"/><path d="M10 8h4"/></svg></span>
             <span><span class="usp-kicker">ASAT</span><span class="usp-title">Student Apex Tweet</span></span>
@@ -1288,7 +1269,7 @@
           <p>A focused language and aptitude initiative that develops expression, vocabulary, critical thinking, and confident articulation. It supports students who aspire for stronger communication, academic competitions, and global learning pathways.</p>
           <span class="usp-benefit">Builds confidence for interviews and public speaking</span>
         </details>
-        <details class="usp-card">
+        <details class="usp-card" open>
           <summary>
             <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M6 12v5a2 2 0 0 0 2 2h1"/><path d="M18 12v5a2 2 0 0 1-2 2h-1"/><path d="M9 19h6"/></svg></span>
             <span><span class="usp-kicker">LSP</span><span class="usp-title">Learning Support Program</span></span>
@@ -1296,7 +1277,7 @@
           <p>Provides individual attention for learners who need reinforcement, bridge learning, or guided practice. Teachers track progress closely so children feel supported instead of left behind.</p>
           <span class="usp-benefit">Gives parents reassurance through guided support</span>
         </details>
-        <details class="usp-card">
+        <details class="usp-card" open>
           <summary>
             <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4V5Z"/><path d="M8 9h8M8 13h5"/></svg></span>
             <span><span class="usp-kicker">SLC</span><span class="usp-title">Student Led Conferences</span></span>
@@ -1304,7 +1285,7 @@
           <p>Gives students the stage to explain their own progress, strengths, projects, and goals. Parents see not only marks, but also confidence, ownership, and reflection in action.</p>
           <span class="usp-benefit">Lets parents hear progress from the child directly</span>
         </details>
-        <details class="usp-card">
+        <details class="usp-card" open>
           <summary>
             <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M5 4h14"/><path d="M7 4v16"/><path d="M17 4v16"/><path d="M7 12h10"/><path d="M5 20h14"/></svg></span>
             <span><span class="usp-kicker">LDP</span><span class="usp-title">Language Development Program</span></span>
@@ -1312,7 +1293,7 @@
           <p>Improves listening, speaking, reading, comprehension, and written expression through consistent classroom practice. The goal is clear communication across subjects, not only language periods.</p>
           <span class="usp-benefit">Improves day-to-day communication at school and home</span>
         </details>
-        <details class="usp-card">
+        <details class="usp-card" open>
           <summary>
             <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8h14"/><path d="M7 16h10"/><path d="M4 21h16"/></svg></span>
             <span><span class="usp-kicker">ETZ</span><span class="usp-title">Extra Time Zone</span></span>
