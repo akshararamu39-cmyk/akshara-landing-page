@@ -1,0 +1,1445 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akshara International School | Admissions 2026-27</title>
+  <meta name="description" content="Admissions landing page for Akshara International School.">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+    :root {
+      --ink: #102a5c;
+      --muted: #5f6d7f;
+      --blue: #123f8c;
+      --blue-dark: #082b68;
+      --blue-soft: #eef5ff;
+      --gold: #f5b942;
+      --gold-dark: #d99514;
+      --green: #178661;
+      --aqua: #edf7ff;
+      --paper: #fff8e6;
+      --line: #dfe7ea;
+      --white: #ffffff;
+      --shadow: 0 22px 55px rgba(22, 35, 59, .14);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .topbar {
+      background: var(--blue-dark);
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .topbar-inner,
+    .nav-inner,
+    .section-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 9px 0;
+      flex-wrap: wrap;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(223, 231, 234, .8);
+    }
+
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      min-width: 260px;
+    }
+
+    .official-logo {
+      width: 74px;
+      height: 74px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 12px 24px rgba(16, 42, 92, .16);
+      border: 2px solid rgba(245, 185, 66, .42);
+    }
+
+    .brand-name {
+      display: grid;
+      gap: 2px;
+      margin-left: 12px;
+    }
+
+    .brand-name strong {
+      color: var(--blue-dark);
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .brand-name span {
+      color: var(--gold-dark);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: #314056;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 8px;
+      font-weight: 800;
+      font: inherit;
+      border: 1px solid transparent;
+      cursor: pointer;
+      appearance: none;
+    }
+
+    .button.primary {
+      background: var(--blue);
+      color: var(--white);
+      box-shadow: 0 14px 28px rgba(18, 63, 140, .24);
+    }
+
+    .button.primary:hover {
+      background: var(--blue-dark);
+    }
+
+    .button.secondary {
+      background: var(--white);
+      border-color: rgba(23, 35, 59, .18);
+    }
+
+    .button.gold {
+      background: var(--gold);
+      color: #13213b;
+      box-shadow: 0 14px 28px rgba(245, 185, 66, .28);
+    }
+
+    .button.gold:hover {
+      background: var(--gold-dark);
+    }
+
+    .hero {
+      min-height: min(680px, calc(100vh - 148px));
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      display: grid;
+      align-items: stretch;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: url("https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-1-1024x646.png") center right / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(238,245,255,.98) 0%, rgba(238,245,255,.91) 35%, rgba(238,245,255,.42) 62%, rgba(238,245,255,.08) 100%),
+        linear-gradient(180deg, rgba(255,255,255,.12), rgba(16,42,92,.1));
+    }
+
+    .hero-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 54px 0 30px;
+      display: grid;
+      grid-template-columns: minmax(0, 590px) minmax(300px, 420px);
+      align-items: center;
+      justify-content: space-between;
+      gap: 56px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      color: var(--blue);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 999px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .96;
+      letter-spacing: 0;
+      max-width: 650px;
+    }
+
+    .hero-copy {
+      max-width: 565px;
+      color: #425168;
+      font-size: 19px;
+      margin-bottom: 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 590px;
+    }
+
+    .metric {
+      padding: 14px 16px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid rgba(223, 231, 234, .78);
+      border-radius: 8px;
+      min-height: 86px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .lead-form {
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+    }
+
+    .form-panel {
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(18, 63, 140, .14);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .form-head {
+      background: var(--blue);
+      color: var(--white);
+      padding: 18px 20px 16px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .form-panel h2 {
+      margin-bottom: 4px;
+      font-size: 26px;
+      letter-spacing: 0;
+    }
+
+    .form-panel p {
+      color: rgba(255,255,255,.78);
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .form-body {
+      padding: 18px 20px 20px;
+    }
+
+    .lsq-widget-shell {
+      padding: 18px 20px 20px;
+      background:
+        linear-gradient(180deg, #ffffff, #f8fbff);
+      min-height: 330px;
+    }
+
+    .lsq-widget-shell .lsq-portal-widget {
+      min-height: 300px;
+    }
+
+    .enquiry-card-body {
+      padding: 22px 20px 20px;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+    }
+
+    .enquiry-points {
+      display: grid;
+      gap: 11px;
+      margin: 0 0 18px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .enquiry-points li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #34435b;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .enquiry-points li::before {
+      content: "";
+      flex: 0 0 10px;
+      width: 10px;
+      height: 10px;
+      margin-top: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(245, 185, 66, .18);
+    }
+
+    .form-support {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .form-support span {
+      display: grid;
+      place-items: center;
+      min-height: 42px;
+      padding: 8px;
+      border-radius: 8px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 800;
+      color: #314056;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid #ccd8dd;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font: inherit;
+      color: var(--ink);
+      background: var(--white);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 3px solid rgba(245, 185, 66, .32);
+      border-color: var(--blue);
+    }
+
+    textarea {
+      min-height: 88px;
+      resize: vertical;
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.05;
+      margin-bottom: 12px;
+      letter-spacing: 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    .band-aqua {
+      background: linear-gradient(180deg, var(--aqua), #ffffff);
+    }
+
+    .program-grid,
+    .usp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .program,
+    .campus {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 20px;
+    }
+
+    .program {
+      min-height: 220px;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: var(--paper);
+      color: var(--blue);
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .program h3,
+    .campus h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .program p,
+    .campus p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .usp-card {
+      position: relative;
+      min-height: 214px;
+      border: 1px solid rgba(18, 63, 140, .14);
+      border-radius: 8px;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+      box-shadow: 0 18px 40px rgba(16, 42, 92, .08);
+      overflow: hidden;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+
+    .usp-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--blue));
+    }
+
+    .usp-card[open],
+    .usp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 54px rgba(16, 42, 92, .16);
+      border-color: rgba(245, 185, 66, .72);
+    }
+
+    .usp-card summary {
+      min-height: 128px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: start;
+      gap: 12px;
+      padding: 24px 22px 12px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .usp-card summary::after {
+      content: "+";
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #14233e;
+      font-weight: 900;
+      line-height: 1;
+      transition: transform .22s ease;
+    }
+
+    .usp-card[open] summary::after {
+      content: "-";
+      transform: rotate(180deg);
+    }
+
+    .usp-card summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .usp-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      border: 1px solid rgba(18, 63, 140, .12);
+    }
+
+    .usp-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: currentColor;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .usp-kicker {
+      display: block;
+      color: var(--gold-dark);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .usp-title {
+      display: block;
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    .usp-card p {
+      color: var(--muted);
+      margin: 0;
+      padding: 0 22px 22px;
+      font-size: 15px;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .photo-card {
+      position: relative;
+      min-height: 330px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--blue-dark);
+      box-shadow: 0 22px 54px rgba(16, 42, 92, .16);
+      isolation: isolate;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.035);
+    }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(8, 43, 104, .88));
+      z-index: 1;
+    }
+
+    .photo-caption {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 20px;
+      z-index: 2;
+      color: var(--white);
+    }
+
+    .photo-caption span {
+      display: inline-flex;
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .photo-caption h3 {
+      margin: 0 0 7px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .photo-caption p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+    }
+
+    .media-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .media-stack .photo-card {
+      min-height: 242px;
+    }
+
+    .media-stack .photo-card img {
+      min-height: 242px;
+    }
+
+    .event-strip {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .event-pill {
+      min-height: 112px;
+      padding: 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(18, 63, 140, .14);
+      background: #ffffff;
+      box-shadow: 0 16px 34px rgba(16, 42, 92, .08);
+    }
+
+    .event-pill strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .event-pill span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .trust-card {
+      min-height: 150px;
+      padding: 20px;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid rgba(18, 63, 140, .14);
+      box-shadow: 0 16px 34px rgba(16, 42, 92, .08);
+    }
+
+    .trust-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 18px;
+    }
+
+    .trust-card span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      background: rgba(8, 20, 45, .68);
+      backdrop-filter: blur(10px);
+    }
+
+    .modal-backdrop.is-open {
+      display: flex;
+    }
+
+    .modal-card {
+      width: min(760px, 100%);
+      max-height: min(86vh, 860px);
+      overflow: auto;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 34px 90px rgba(0, 0, 0, .34);
+      border: 1px solid rgba(245, 185, 66, .42);
+    }
+
+    .modal-head {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      padding: 18px 20px;
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .modal-head h2 {
+      margin: 0 0 3px;
+      font-size: 24px;
+    }
+
+    .modal-head p {
+      margin: 0;
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+    }
+
+    .modal-close {
+      flex: 0 0 40px;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,.14);
+      color: #ffffff;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .modal-body {
+      padding: 18px 20px 20px;
+      min-height: 430px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .story-panel {
+      padding: 34px;
+      background:
+        radial-gradient(circle at 88% 18%, rgba(245, 185, 66, .22), transparent 28%),
+        linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 22px 56px rgba(16, 42, 92, .18);
+    }
+
+    .story-panel h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .story-panel p {
+      color: rgba(255,255,255,.78);
+    }
+
+    .story-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .story-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-weight: 700;
+    }
+
+    .check {
+      flex: 0 0 25px;
+      width: 25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--green);
+      color: var(--white);
+      font-size: 14px;
+    }
+
+    .campus-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .campus {
+      min-height: 118px;
+      border-left: 5px solid var(--gold);
+    }
+
+    .process {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .step {
+      position: relative;
+      padding: 24px 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      min-height: 168px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .step h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .step p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
+      padding: 52px 0;
+    }
+
+    .cta-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .cta-inner h2 {
+      margin-bottom: 6px;
+      font-size: clamp(28px, 4vw, 42px);
+      letter-spacing: 0;
+    }
+
+    .cta-inner p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,.82);
+    }
+
+    footer {
+      background: #10192c;
+      color: var(--white);
+      padding: 38px 0;
+    }
+
+    .footer-grid {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.25fr 1fr 1fr;
+      gap: 28px;
+    }
+
+    footer p,
+    footer a {
+      color: rgba(255,255,255,.72);
+    }
+
+    footer h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links { display: none; }
+
+      .hero-inner,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner {
+        padding-top: 36px;
+      }
+
+      .lead-form {
+        max-width: 560px;
+      }
+
+      .program-grid,
+      .usp-grid,
+      .campus-grid,
+      .process,
+      .event-strip,
+      .trust-grid,
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .media-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner,
+      .nav-inner,
+      .section-inner,
+      .hero-inner,
+      .cta-inner,
+      .footer-grid {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .topbar-inner {
+        font-size: 12px;
+      }
+
+      .nav-inner {
+        min-height: 66px;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .official-logo {
+        width: 54px;
+        height: 54px;
+      }
+
+      .brand-name strong {
+        font-size: 14px;
+      }
+
+      .brand-name span {
+        font-size: 9px;
+      }
+
+      .hero::after {
+        background:
+          linear-gradient(180deg, rgba(238,245,255,.98) 0%, rgba(238,245,255,.92) 58%, rgba(238,245,255,.68) 100%),
+          linear-gradient(90deg, rgba(238,245,255,.92), rgba(238,245,255,.35));
+      }
+
+      .hero-inner {
+        padding: 40px 0 24px;
+        gap: 34px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero-copy,
+      .section-heading p {
+        font-size: 16px;
+      }
+
+      .metrics,
+      .form-row,
+      .program-grid,
+      .usp-grid,
+      .campus-grid,
+      .process,
+      .event-strip,
+      .trust-grid,
+      .form-support,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .story-panel {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Admissions open for Academic Year 2026-27</span>
+      <span>Call +91 9023079999 | admissions@akshara.edu.in</span>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <img class="official-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/AKSHARA_Logo.jpg" alt="Akshara International School logo">
+        <span class="brand-name">
+          <strong>Akshara</strong>
+          <span>International School</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#programs">Stages</a>
+        <a href="#features">USPs</a>
+        <a href="#infrastructure">Infrastructure</a>
+        <a href="#events">Events</a>
+        <a href="#campuses">Campuses</a>
+        <a href="#admissions">Admissions</a>
+      </div>
+      <button class="button gold" type="button" data-open-form>Admission Enquiry</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">International School</div>
+        <h1>Where young minds learn to fly.</h1>
+        <p class="hero-copy">A progressive CBSE school network built around academic excellence, confident communication, sports, arts, care, and holistic student growth.</p>
+        <div class="hero-actions">
+          <button class="button gold" type="button" data-open-form>Enquiry Now</button>
+          <a class="button primary" href="tel:+919023079999">Call Admissions</a>
+          <a class="button secondary" href="#campuses">Find a Campus</a>
+        </div>
+        <div class="metrics" aria-label="School highlights">
+          <div class="metric"><strong>9,500+</strong><span>Students across the group</span></div>
+          <div class="metric"><strong>1,100</strong><span>Qualified staff members</span></div>
+          <div class="metric"><strong>4.7</strong><span>Parent review rating</span></div>
+        </div>
+      </div>
+
+      <div class="lead-form" id="enquiry">
+        <div class="form-panel">
+          <div class="form-head">
+            <h2>Admission Enquiry</h2>
+            <p>The official form opens automatically. You can reopen it anytime from here.</p>
+          </div>
+          <div class="enquiry-card-body">
+            <ul class="enquiry-points">
+              <li>Submit details through the official Akshara admissions form.</li>
+              <li>Get guidance for campus, class, curriculum, and visit scheduling.</li>
+              <li>Speak directly with the admissions team for Academic Year 2026-27.</li>
+            </ul>
+            <button class="button gold full" type="button" data-open-form>Open Admission Form</button>
+            <div class="form-support">
+              <span>2026-27 Admissions</span>
+              <span>Campus Guidance</span>
+              <span>Quick Callback</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="programs">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Learning designed for every stage.</h2>
+        <p>From early years to secondary school, Akshara’s framework balances conceptual clarity, student confidence, and purposeful enrichment.</p>
+      </div>
+      <div class="program-grid">
+        <article class="program">
+          <div class="icon">F</div>
+          <h3>Foundation Stage</h3>
+          <p>Playful discovery, language readiness, numeracy, personal routines, and warm classroom belonging.</p>
+        </article>
+        <article class="program">
+          <div class="icon">P</div>
+          <h3>Preparatory Stage</h3>
+          <p>Activity-led learning that strengthens comprehension, curiosity, collaboration, and expression.</p>
+        </article>
+        <article class="program">
+          <div class="icon">M</div>
+          <h3>Middle Stage</h3>
+          <p>Deeper subject exploration with projects, technology, communication, fitness, and guided reflection.</p>
+        </article>
+        <article class="program">
+          <div class="icon">S</div>
+          <h3>Secondary Stage</h3>
+          <p>Academic focus, exam readiness, leadership opportunities, and future-facing skill development.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-aqua" id="features">
+    <div class="section-inner">
+      <div class="story-panel">
+        <div class="eyebrow">Akshara USPs</div>
+        <h2>Signature programs for stronger academics, communication, and confidence.</h2>
+        <p>Akshara’s learning ecosystem goes beyond classroom lessons with structured enrichment, language development, learning support, student-led reflection, and after-school growth.</p>
+        <ul class="story-list">
+          <li><span class="check">✓</span><span>CBSE-focused academics with a progressive school culture.</span></li>
+          <li><span class="check">✓</span><span>Sports, fitness, arts, clubs, and communication programs.</span></li>
+          <li><span class="check">✓</span><span>Care, concern, learning support, and student-led development.</span></li>
+        </ul>
+      </div>
+      <div class="usp-grid">
+        <details class="usp-card" open>
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h7v18H6a2 2 0 0 1-2-1.5Z"/><path d="M13 3h5a2 2 0 0 1 2 2v14.5A2 2 0 0 0 18 18h-5"/><path d="M8 7h2M8 11h2"/></svg></span>
+            <span><span class="usp-kicker">ASEP</span><span class="usp-title">Akshara Skill Enrichment Program</span></span>
+          </summary>
+          <p>Builds 21st-century scholastic skills through curated enrichment in logical thinking, presentation, problem solving, digital awareness, and competitive readiness. It helps students move from textbook confidence to real-world application.</p>
+        </details>
+        <details class="usp-card">
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M12 20v-6"/><path d="M8 20h8"/><path d="M7 8a5 5 0 0 1 10 0c0 4-5 7-5 7s-5-3-5-7Z"/><path d="M10 8h4"/></svg></span>
+            <span><span class="usp-kicker">ASAT</span><span class="usp-title">Student Apex Tweet</span></span>
+          </summary>
+          <p>A focused language and aptitude initiative that develops expression, vocabulary, critical thinking, and confident articulation. It supports students who aspire for stronger communication, academic competitions, and global learning pathways.</p>
+        </details>
+        <details class="usp-card">
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0"/><path d="M6 12v5a2 2 0 0 0 2 2h1"/><path d="M18 12v5a2 2 0 0 1-2 2h-1"/><path d="M9 19h6"/></svg></span>
+            <span><span class="usp-kicker">LSP</span><span class="usp-title">Learning Support Program</span></span>
+          </summary>
+          <p>Provides individual attention for learners who need reinforcement, bridge learning, or guided practice. Teachers track progress closely so children feel supported instead of left behind.</p>
+        </details>
+        <details class="usp-card">
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4V5Z"/><path d="M8 9h8M8 13h5"/></svg></span>
+            <span><span class="usp-kicker">SLC</span><span class="usp-title">Student Led Conferences</span></span>
+          </summary>
+          <p>Gives students the stage to explain their own progress, strengths, projects, and goals. Parents see not only marks, but also confidence, ownership, and reflection in action.</p>
+        </details>
+        <details class="usp-card">
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M5 4h14"/><path d="M7 4v16"/><path d="M17 4v16"/><path d="M7 12h10"/><path d="M5 20h14"/></svg></span>
+            <span><span class="usp-kicker">LDP</span><span class="usp-title">Language Development Program</span></span>
+          </summary>
+          <p>Improves listening, speaking, reading, comprehension, and written expression through consistent classroom practice. The goal is clear communication across subjects, not only language periods.</p>
+        </details>
+        <details class="usp-card">
+          <summary>
+            <span class="usp-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8h14"/><path d="M7 16h10"/><path d="M4 21h16"/></svg></span>
+            <span><span class="usp-kicker">ETZ</span><span class="usp-title">Extra Time Zone</span></span>
+          </summary>
+          <p>Extends the school day into meaningful activities: sports, clubs, arts, wellness, supervised practice, and skill sessions. Students get time to discover interests and build habits beyond academics.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="infrastructure">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Infrastructure that supports premium learning.</h2>
+        <p>Well-planned academic spaces, sports facilities, activity zones, and creative environments help children learn with focus, movement, and confidence.</p>
+      </div>
+      <div class="media-grid">
+        <article class="photo-card">
+          <img src="https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-1-1024x646.png" alt="Akshara dedicated labs and imported teaching aids">
+          <div class="photo-caption">
+            <span>Labs & Teaching Aids</span>
+            <h3>Dedicated labs and imported teaching aids.</h3>
+            <p>Original Akshara infrastructure media showcasing practical learning support.</p>
+          </div>
+        </article>
+        <div class="media-stack">
+          <article class="photo-card">
+            <img src="https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-2-1024x649.png" alt="Akshara green field turf for sports">
+            <div class="photo-caption">
+              <span>Green Field Turf</span>
+              <h3>Sports-ready outdoor infrastructure.</h3>
+              <p>Original Akshara media highlighting ground and sports facilities.</p>
+            </div>
+          </article>
+          <article class="photo-card">
+            <img src="https://akshara.edu.in/wp-content/uploads/2024/08/New-Websit.png" alt="Akshara sports and fitness program">
+            <div class="photo-caption">
+              <span>Sports & Fitness</span>
+              <h3>Fitness, play, and student development.</h3>
+              <p>Original Akshara media connected to its sports and fitness experience.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="media-grid" style="margin-top:18px;">
+        <article class="photo-card">
+          <img src="https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-3-1024x645.png" alt="Akshara infrastructure and activity spaces">
+          <div class="photo-caption">
+            <span>Campus Facilities</span>
+            <h3>Activity-ready learning environment.</h3>
+            <p>Original Akshara infrastructure media for spaces that support daily student life.</p>
+          </div>
+        </article>
+        <article class="photo-card">
+          <img src="https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-4-1024x643.png" alt="Akshara infrastructure safety and campus support">
+          <div class="photo-caption">
+            <span>Campus Support</span>
+            <h3>Care, supervision, and operations.</h3>
+            <p>Original Akshara infrastructure media paired with parent-facing safety and support information.</p>
+          </div>
+        </article>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card"><strong>Dedicated Labs</strong><span>Science, exploration, and practical learning spaces supported by visual and hands-on aids.</span></div>
+        <div class="trust-card"><strong>Sports Grounds</strong><span>Sports Academy culture with active routines, coaching, and inter-school opportunities.</span></div>
+        <div class="trust-card"><strong>Activity Zones</strong><span>Arts, culture, clubs, exhibitions, student-led showcases, and stage confidence.</span></div>
+        <div class="trust-card"><strong>Safety Systems</strong><span>Transport attendants, route support, hygiene routines, and care-first campus operations.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-aqua" id="events">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Events that build confidence.</h2>
+        <p>Akshara’s event calendar gives students repeated opportunities to perform, present, compete, collaborate, and celebrate learning with peers and parents.</p>
+      </div>
+      <div class="event-strip">
+        <div class="event-pill"><strong>Annual Day</strong><span>Stage confidence, teamwork, rhythm, narration, and cultural expression.</span></div>
+        <div class="event-pill"><strong>Science Expo</strong><span>Hands-on experiments, working models, inquiry, and public explanation.</span></div>
+        <div class="event-pill"><strong>Sports Meet</strong><span>Athletics, house spirit, discipline, resilience, and healthy competition.</span></div>
+        <div class="event-pill"><strong>Student Showcases</strong><span>Art, clubs, debates, language activities, projects, and leadership moments.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="campuses">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Choose a campus close to home.</h2>
+        <p>Akshara International School serves families through a growing school network with campuses across key residential communities.</p>
+      </div>
+      <div class="campus-grid">
+        <article class="campus"><h3>Pocharam</h3><p>Campus option for nearby residential communities.</p></article>
+        <article class="campus"><h3>Nadergul</h3><p>Accessible for families in the southern corridor.</p></article>
+        <article class="campus"><h3>L. B. Nagar</h3><p>Urban campus for established neighborhoods.</p></article>
+        <article class="campus"><h3>Kukatpally</h3><p>Convenient for families in the western corridor.</p></article>
+        <article class="campus"><h3>A. S. Rao Nagar</h3><p>Serving families in the north-east zone.</p></article>
+        <article class="campus"><h3>Kismatpur</h3><p>Campus access near the growing residential belt.</p></article>
+        <article class="campus"><h3>Suchitra</h3><p>Campus choice for northern residential communities.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-aqua" id="admissions">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>A simple admissions journey.</h2>
+        <p>Designed for busy parents: enquire, speak to the admissions team, visit the campus, and complete enrollment with clear guidance.</p>
+      </div>
+      <div class="process">
+        <article class="step"><h3>Submit enquiry</h3><p>Share parent, student, grade, and campus preference.</p></article>
+        <article class="step"><h3>Admissions call</h3><p>Receive program, availability, fee, and visit guidance.</p></article>
+        <article class="step"><h3>Campus interaction</h3><p>Meet the team and understand the learning environment.</p></article>
+        <article class="step"><h3>Confirm admission</h3><p>Complete the formalities for Academic Year 2026-27.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <aside class="cta-band">
+    <div class="cta-inner">
+      <div>
+        <h2>Ready to visit Akshara?</h2>
+        <p>Talk to the admissions team and find the right campus for your child.</p>
+      </div>
+      <button class="button gold" type="button" data-open-form>Submit Admission Enquiry</button>
+      <a class="button secondary" href="tel:+919023079999">Call +91 9023079999</a>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Akshara International School</h3>
+        <p>Progressive CBSE education with a focus on holistic growth, confidence, and character.</p>
+      </div>
+      <div>
+        <h3>Admissions</h3>
+        <p><a href="tel:+919023079999">+91 9023079999</a><br><a href="mailto:admissions@akshara.edu.in">admissions@akshara.edu.in</a></p>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <p><a href="https://akshara.edu.in/">akshara.edu.in</a><br>Landing page concept for admissions.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="admission-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head">
+        <div>
+          <h2 id="modal-title">Admission Enquiry</h2>
+          <p>Complete the official enquiry form and the Akshara admissions team will contact you.</p>
+        </div>
+        <button class="modal-close" type="button" aria-label="Close admission form" data-close-form>&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="lsq-portal-widget-6208985a-ccf2-11ef-b491-02eda0793197-8d900e90-673d-4c6f-a180-d8cd0eb27396"
+          class="lsq-portal-widget lsq-form-widget">
+          <script src="https://portal-widgets.lsqportal.com/assets/bootstrap-widget.js"
+            data-widget-id="6208985a-ccf2-11ef-b491-02eda0793197"
+            data-version-id="8d900e90-673d-4c6f-a180-d8cd0eb27396"
+            data-formjs="https://forms.lsqportal.com/r21/js/lsq.form.js"
+            data-URL="https://portal-widgets.lsqportal.com"
+            onload="window['___lsq-portal-widget-helpers___'].bootstrapLSQWidget(event)"
+            charset="utf-8">
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const admissionModal = document.getElementById("admission-modal");
+    const openAdmissionForm = () => {
+      admissionModal.classList.add("is-open");
+      admissionModal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
+    const closeAdmissionForm = () => {
+      admissionModal.classList.remove("is-open");
+      admissionModal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    };
+
+    document.querySelectorAll("[data-open-form]").forEach((button) => {
+      button.addEventListener("click", openAdmissionForm);
+    });
+
+    document.querySelectorAll("[data-close-form]").forEach((button) => {
+      button.addEventListener("click", closeAdmissionForm);
+    });
+
+    admissionModal.addEventListener("click", (event) => {
+      if (event.target === admissionModal) {
+        closeAdmissionForm();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeAdmissionForm();
+      }
+    });
+
+    window.addEventListener("load", () => {
+      window.setTimeout(openAdmissionForm, 900);
+    });
+  </script>
+</body>
+</html>
