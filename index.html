@@ -845,6 +845,154 @@
       font-size: 14px;
     }
 
+    .editorial-intro {
+      background: #ffffff;
+      padding: 96px 0;
+    }
+
+    .editorial-grid {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .editorial-kicker {
+      color: var(--gold-dark);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .editorial-title {
+      margin: 0;
+      color: #071d45;
+      font-size: clamp(36px, 5vw, 62px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .editorial-copy {
+      color: #3e4d63;
+      font-size: 19px;
+      line-height: 1.75;
+      margin: 0 0 22px;
+    }
+
+    .editorial-signature {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding-top: 8px;
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .editorial-signature::before {
+      content: "";
+      width: 56px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .premium-story {
+      padding: 96px 0;
+      background:
+        linear-gradient(135deg, rgba(8, 43, 104, .96), rgba(18, 63, 140, .92)),
+        url("https://akshara.edu.in/wp-content/uploads/2025/01/Infrastructure-Brochure-2-1024x649.png") center / cover no-repeat;
+      color: #ffffff;
+    }
+
+    .premium-story-inner {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: end;
+    }
+
+    .premium-story h2 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .premium-story p {
+      margin: 0;
+      color: rgba(255,255,255,.82);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .testimonial-section {
+      padding: 96px 0;
+      background:
+        radial-gradient(circle at 10% 12%, rgba(245, 185, 66, .16), transparent 28%),
+        linear-gradient(180deg, #ffffff, #f6fbff);
+    }
+
+    .testimonial-grid {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial-card {
+      position: relative;
+      min-height: 310px;
+      display: grid;
+      align-content: space-between;
+      padding: 30px;
+      border-radius: 8px;
+      background: #ffffff;
+      border: 1px solid rgba(18, 63, 140, .1);
+      box-shadow: 0 22px 54px rgba(16, 42, 92, .1);
+    }
+
+    .testimonial-card::before {
+      content: "“";
+      position: absolute;
+      top: 12px;
+      right: 24px;
+      color: rgba(245, 185, 66, .45);
+      font-size: 78px;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .testimonial-card p {
+      position: relative;
+      margin: 0;
+      color: #33445e;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .testimonial-card strong {
+      display: block;
+      margin-top: 22px;
+      color: var(--blue-dark);
+      font-size: 15px;
+    }
+
+    .testimonial-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--gold-dark);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
     .modal-backdrop {
       position: fixed;
       inset: 0;
@@ -1100,6 +1248,12 @@
       .media-grid {
         grid-template-columns: 1fr;
       }
+
+      .editorial-grid,
+      .premium-story-inner,
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 640px) {
@@ -1169,6 +1323,7 @@
       .process,
       .event-strip,
       .trust-grid,
+      .testimonial-grid,
       .form-support,
       .footer-grid {
         grid-template-columns: 1fr;
@@ -1255,6 +1410,20 @@
     </div>
   </header>
 
+  <section class="editorial-intro">
+    <div class="editorial-grid">
+      <div>
+        <div class="editorial-kicker">Welcome to Akshara</div>
+        <h2 class="editorial-title">An environment where children feel known, guided, and inspired.</h2>
+      </div>
+      <div>
+        <p class="editorial-copy">A premium school experience is not only about buildings. It is about how confidently a child walks into class, how clearly they communicate, how safely they explore, and how closely parents can see their progress.</p>
+        <p class="editorial-copy">Akshara brings academics, play, sports, language, student-led reflection, and pastoral care together so every learner grows with both ambition and belonging.</p>
+        <div class="editorial-signature">Admissions Open 2026-27</div>
+      </div>
+    </div>
+  </section>
+
   <section id="programs">
     <div class="section-inner">
       <div class="section-heading">
@@ -1296,6 +1465,13 @@
       </div>
     </div>
   </aside>
+
+  <section class="premium-story">
+    <div class="premium-story-inner">
+      <h2>Where playing is Learning, and every moment has purpose.</h2>
+      <p>In the best international school environments, learning does not stop at the classroom door. Movement, performance, experiments, storytelling, teamwork, and reflection become part of the child’s daily rhythm. Akshara’s USP programs are built around that parent-visible growth.</p>
+    </div>
+  </section>
 
   <section class="band-aqua" id="features">
     <div class="section-inner">
@@ -1476,6 +1652,29 @@
         <article class="campus"><h3>Suchitra</h3><p>Campus choice for northern residential communities.</p></article>
         <article class="campus"><h3>Karimnagar</h3><p>Akshara branch for families looking beyond the city corridor.</p></article>
       </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>What parents value most.</h2>
+        <p>Parent voices are presented as short landing-page testimonials to reflect the confidence, care, and communication families expect from a premium school experience.</p>
+      </div>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <p>We wanted a school where academics were strong, but our child would still enjoy going every morning. The balance of activities, communication, and teacher attention gives us confidence.</p>
+        <div><strong>Parent of a Primary Student</strong><span>Confidence & Care</span></div>
+      </article>
+      <article class="testimonial-card">
+        <p>The student-led approach helps us understand our child’s growth beyond marks. We can see improvement in speaking, responsibility, and willingness to participate.</p>
+        <div><strong>Parent of a Middle School Student</strong><span>Visible Progress</span></div>
+      </article>
+      <article class="testimonial-card">
+        <p>Sports, language development, and enrichment programs make the school experience feel complete. It feels like the child is being prepared for life, not only exams.</p>
+        <div><strong>Parent of a Senior Student</strong><span>Holistic Growth</span></div>
+      </article>
     </div>
   </section>
 
